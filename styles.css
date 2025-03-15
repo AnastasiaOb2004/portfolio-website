@@ -102,8 +102,13 @@ body {
     background-color: var(--primary-text-color);
     border: none;
     margin-top: 33px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
+#home-content-text>div>button:hover {
+    background-color:#054a77;
+}
 
 #home-content-text>div>button>a {
     color: white;
