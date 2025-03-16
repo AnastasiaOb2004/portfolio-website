@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* http://www.rw-designer.com/cursor-set/blue-gradient-no-shadow */
+
 html,
 body {
     padding: 0;
@@ -8,20 +10,31 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     background-color: #77C0EE;
-    overflow-y: hidden;
-    overflow-x: hidden;
+   overflow: hidden;
     line-height: 1.5;
 }
 
 :root {
     --primary-text-color: #075D97;
     --text-size: 22px;
+    --hover-color: #011ef9;
+    --cursor: url("images/cursors/Normal\ Select.png") 0 0, pointer;
+    --hand-cursor: url("images/cursors/Link\ Select.png") 0 0, pointer;
+}
+
+body {
+    cursor: var(--cursor);
+}
+
+a, button, input[type="submit"], input[type="button"] {
+   cursor: var(--hand-cursor);
 }
 
 #navbar>ul>li>a {
     color: var(--primary-text-color);
     text-decoration: none;
     font-size: var(--text-size);
+    transition: 0.5s ease-in-out;
 }
 
 #navbar {
@@ -30,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    z-index:100;
+    z-index: 100;
 }
 
 #navbar>ul {
@@ -40,7 +53,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    cursor: pointer;
 }
 
 #navbar>ul>li>img {
@@ -55,7 +67,7 @@ body {
 }
 
 #navbar>ul>li>a:hover {
-    text-decoration: underline;
+    color: var(--hover-color);
 }
 
 
@@ -64,7 +76,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    z-index:10;
+    z-index: 10;
 }
 
 #home-content-text {
@@ -102,12 +114,11 @@ body {
     background-color: var(--primary-text-color);
     border: none;
     margin-top: 33px;
-    cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
 #home-content-text>div>button:hover {
-    background-color:#054a77;
+    background-color: var(--hover-color);
 }
 
 #home-content-text>div>button>a {
@@ -125,23 +136,17 @@ body {
     height: auto;
     max-height: 93%;
     position: relative;
-    z-index:10;
+    z-index: 10;
 }
-
-/* #home-content-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-} */
 
 .clouds-bg {
     position: absolute;
     bottom: 0;
-    z-index:5;
-
+    z-index: 5;
 }
 
-#cloud1-bg, #cloud2-bg {
+#cloud1-bg,
+#cloud2-bg {
     width: 1800px;
 }
 
@@ -152,13 +157,12 @@ body {
 #cloud2-bg {
     right: 200px;
     bottom: -10px;
-    z-index:3;
+    z-index: 3;
 }
 
-#cloud3-bg { 
+#cloud3-bg {
     z-index: 20;
     right: -5px;
     width: 800px;
     bottom: -30px;
-
 }
