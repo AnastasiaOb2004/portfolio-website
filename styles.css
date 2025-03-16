@@ -10,14 +10,14 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     background-color: #77C0EE;
-   overflow: hidden;
+    overflow: hidden;
     line-height: 1.5;
 }
 
 :root {
     --primary-text-color: #075D97;
     --text-size: 22px;
-    --hover-color: #011ef9;
+    --hover-color: #014076;
     --cursor: url("images/cursors/Normal\ Select.png") 0 0, pointer;
     --hand-cursor: url("images/cursors/Link\ Select.png") 0 0, pointer;
 }
@@ -26,8 +26,11 @@ body {
     cursor: var(--cursor);
 }
 
-a, button, input[type="submit"], input[type="button"] {
-   cursor: var(--hand-cursor);
+a,
+button,
+input[type="button"],
+#navbar>ul>li>img:hover {
+    cursor: var(--hand-cursor);
 }
 
 #navbar>ul>li>a {
@@ -58,6 +61,7 @@ a, button, input[type="submit"], input[type="button"] {
 #navbar>ul>li>img {
     width: 30px;
     height: 30px;
+    fill: white;
 }
 
 #navbar>ul>li {
