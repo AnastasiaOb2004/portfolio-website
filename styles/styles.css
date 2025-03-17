@@ -18,8 +18,8 @@ body {
     --primary-text-color: #075D97;
     --text-size: 22px;
     --hover-color: #014076;
-    --cursor: url("images/cursors/Normal\ Select.png") 0 0, pointer;
-    --hand-cursor: url("images/cursors/Link\ Select.png") 0 0, pointer;
+    --cursor: url("../images/cursors/Normal\ Select.png") 0 0, pointer;
+    --hand-cursor: url("../images/cursors/Link\ Select.png") 0 0, pointer;
 }
 
 body {
@@ -32,49 +32,6 @@ input[type="button"],
 #navbar>ul>li>img:hover {
     cursor: var(--hand-cursor);
 }
-
-#navbar>ul>li>a {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-size: var(--text-size);
-    transition: 0.5s ease-in-out;
-}
-
-#navbar {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-}
-
-#navbar>ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-#navbar>ul>li>img {
-    width: 30px;
-    height: 30px;
-    fill: white;
-}
-
-#navbar>ul>li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#navbar>ul>li>a:hover {
-    color: var(--hover-color);
-}
-
-
 
 #home-content {
     display: grid;
