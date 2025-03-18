@@ -1,0 +1,12 @@
+body {
+    overflow-y: scroll;
+}
+
+#who-am-i-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about-img {
+    width: 300px;
+}
