@@ -82,3 +82,63 @@ html, body {
     border-radius: 20px;
     font-size: 23px;
 }
+
+.clouds-charac-about {
+    width: 500px;
+}
+
+#characteristics-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: linear-gradient(180deg, #77C0EE 0%, rgba(37.40, 160.71, 255, 0.49) 28%, rgba(172.76, 207.03, 255, 0.59) 50%, rgba(37, 161, 255, 0.68) 72%, #77C0EE 100%);
+}
+
+.cloud-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    gap: 20px;
+}
+
+.cloud-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud-container img {
+    width: 400px;
+}
+
+#main-cloud img {
+    width: 550px;
+}
+
+#main-cloud p {
+    font-size: 27px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.cloud-container p {
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.cloud-container:nth-child(1) { grid-column: 1; grid-row: 1; justify-self: end; }
+.cloud-container:nth-child(2) { grid-column: 3; grid-row: 1; }
+.cloud-container:nth-child(3) { grid-column: 2; grid-row: 2; }
+.cloud-container:nth-child(4) { grid-column: 1; grid-row: 3; justify-self: end; align-self: end; }
+.cloud-container:nth-child(5) { grid-column: 3; grid-row: 3; align-self: end; }
+
+#about-character {
+    position: absolute;
+    width: 200px;
+    transform: translateY(-64%);
+}
