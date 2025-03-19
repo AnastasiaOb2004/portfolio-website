@@ -1,12 +1,84 @@
-body {
-    overflow-y: scroll;
+html, body {
+    overflow-y:auto;
 }
 
 #who-am-i-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
+    align-items: center;
+}
+
+#who-am-i-section > img:nth-child(1) {
+    justify-self: flex-start;
 }
 
 #about-img {
-    width: 300px;
+    width: 480px;
+    margin-left: 100px;
+}
+
+#about-me-description {
+    width: 75%;
+    margin-bottom: 70px;
+    justify-self: start;
+}
+
+#about-me-description > h1 {
+    font-family: "Abril Fatface", cursive;
+    color: var(--primary-text-color);
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#about-me-description > p {
+    font-size: 22px;
+}
+
+.clouds-bg-about {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 1100px;
+}
+
+#cloud1-about {
+    transform: scaleY(-1);
+    top: 0;
+    right: 0px;
+}
+
+#cloud2-about {
+    transform: scale(-1);
+    top: 0;
+    left: 0;
+}
+
+.about-titles {
+    color: var(--primary-text-color);
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+#languages-section {
+    margin-top: 50px;
+}
+
+#languages-section > div {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#languages-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.languages-els {
+    background-color: #ebf8ffc2;
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 23px;
 }
