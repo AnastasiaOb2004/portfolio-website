@@ -11,8 +11,8 @@
     height: 120px;
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 100;
+    position: relative;
 }
 
 #navbar>ul {
