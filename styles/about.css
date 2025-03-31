@@ -20,6 +20,7 @@ html, body {
 #about-me-description {
     width: 75%;
     margin-bottom: 70px;
+    margin-left: 100px;
     justify-self: start;
 }
 
@@ -58,6 +59,7 @@ html, body {
     color: var(--primary-text-color);
     font-size: 30px;
     margin-left: 100px;
+    align-self: flex-start;
 }
 
 #languages-section {
@@ -141,4 +143,52 @@ html, body {
     position: absolute;
     width: 200px;
     transform: translateY(-64%);
+}
+
+.hobby-imgs {
+    width: 400px;
+}
+
+.hobby-els {
+    display: flex;
+    flex-direction: column;
+    border: 3px white solid;
+    border-radius: 114px;
+    align-items: center;
+}
+
+.hobby-els > h4 {
+    font-size: 29px;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 46px;
+}
+
+.hobby-els > p {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    margin: 0 60px 20px 20px;
+    font-weight: 400;
+}
+
+#hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+#hobbies-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hobbies-section > h3 {
+    margin-top: 100px;
 }
