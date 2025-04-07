@@ -155,15 +155,16 @@ html, body {
     border: 3px white solid;
     border-radius: 114px;
     align-items: center;
+    height: 650px;
 }
 
 .hobby-els > h4 {
     font-size: 29px;
     color: var(--primary-text-color);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 500;
-    margin-bottom: 46px;
+    margin-bottom: 36px;
 }
 
 .hobby-els > p {
@@ -179,7 +180,7 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     width: 80%;
 }
 
@@ -191,4 +192,14 @@ html, body {
 
 #hobbies-section > h3 {
     margin-top: 100px;
+}
+
+#hobby-2-img {
+    width: 360px;
+    margin-top: 45px;
+}
+
+
+#hobby-3-img {
+    width: 450px;
 }
