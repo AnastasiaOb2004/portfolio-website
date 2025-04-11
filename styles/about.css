@@ -2,10 +2,16 @@ html, body {
     overflow-y:auto;
 }
 
+body {
+    position: relative;
+}
+
 #who-am-i-section {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     align-items: center;
+    position: relative;
+    
 }
 
 #who-am-i-section > img:nth-child(1) {
@@ -64,6 +70,7 @@ html, body {
 
 #languages-section {
     margin-top: 74px;
+    position: relative;
 }
 
 #languages-section > div {
@@ -93,6 +100,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     margin-top: 100px;
     background: linear-gradient(180deg, #77C0EE 0%, rgba(37.40, 160.71, 255, 0.49) 28%, rgba(172.76, 207.03, 255, 0.59) 50%, rgba(37, 161, 255, 0.68) 72%, #77C0EE 100%);
 }
@@ -188,6 +196,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 #hobbies-section > h3 {
@@ -256,6 +265,10 @@ font-weight: 400;
     height: 60px;
 }
 
+#references-section  {
+    position: relative;
+}
+
 #references-section h3  {
     margin-top: 60px;
 }
@@ -265,4 +278,27 @@ font-size: 22px;
 color: black;
 font-weight: 400;
 margin-left: 100px;
+}
+
+#scroll-up-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #77C0EE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s;
+    color: #075D97;
+    font-size: 22px;
+    border: #075D97 2px solid;
+    font-weight: 600;
+}
+
+#scroll-up-btn:hover {
+    background-color: #6bb0db;
 }
