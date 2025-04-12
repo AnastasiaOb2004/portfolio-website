@@ -219,6 +219,10 @@ body {
     margin-top: 60px;
 }
 
+#contant-section {
+    margin-bottom: 60px;
+}
+
 #contact-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
