@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Front-end Portfolio: Projects</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="icon" href="../images/icons/cloud-icon.png">
+</head>
+<body>
+    <nav id="navbar"></nav>
+
+    <img src = "../images/graphical els/small-cloud.png" id = "cloud-projects" class = "clouds-bg-projects"  alt = "Cloud">
+    <h1>My projects</h1>
+    <p id = "projects-p">Here are some of my projects that I have done. I am looking forward to creating more projects in the future!</p>
+
+    <section class = "projects-containers" id = "projects-container1">
+    <img class = "projects-images" src = "../images/graphical els/project-nf.png">
+    <div>
+        <h3>NR online shop</h3>
+        <p>NF Online Shop is a full-stack e-commerce platform built with HTML, CSS, JavaScript, and Node.js on the backend. I used Firebase for user authentication and data storage and Amazon Web Services (AWS) for managing product images. The site supports both buyers and sellers. You’re welcome to try it out! To access the seller interface, simply add /seller.html to the URL and you’ll be redirected (please be mindful of the content you may publish).</p>
+        <button class = "projects-btns"><a href="../projects/Internet shop/public/index.html">View live</a></button>
+    </div>
+    </section>
+
+    <section class = "projects-containers">
+        <img class = "projects-images" src = "../images/graphical els/project-amazon.png">
+        <div>
+            <h3>Amazon</h3>
+            <p>This project is a replica of the Amazon website, built using HTML, CSS, and JavaScript. Users can add items to the cart, and the total delivery price is automatically calculated.
+                To calculate the delivery date options, I used the external library Day.js.
+                For testing, I used the Jasmine testing framework to ensure that all price and date calculations work correctly.</p>
+            <button class = "projects-btns"><a href="../projects/javascript-amazon-project/amazon.html">View live</a></button>
+        </div>
+        </section>
+
+        <section class = "projects-containers">
+            <img class = "projects-images" src = "../images/graphical els/project-flowerShop.png">
+            <div>
+                <h3>Flower Store</h3>
+                <p>This project is a simple one-page website for selling flowers. I focused a lot on the visual design to make it look appealing. The site was built using HTML, CSS, and JavaScript.
+                    It includes a price calculator and a form for users who want to collaborate in the future. I used Anime.js to animate the buttons and applied event delegation for switching images in the “Our Service” section. There's also a responsive burger menu for the mobile version.</p>
+                <button class = "projects-btns"><a href="../projects/Flower website/Flower website/index.html">View live</a></button>
+            </div>
+            </section>
+    
+
+    <script src="../scripts/projects.js"></script>
+    <script src="../scripts/navbar.js"></script>
+</body>
+</html>
