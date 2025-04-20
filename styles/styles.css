@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* http://www.rw-designer.com/cursor-set/blue-gradient-no-shadow */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    background-color: #77C0EE;
+    overflow: hidden;
+    line-height: 1.5;
+    height: 100%;
+}
+
+:root {
+    --primary-text-color: #075D97;
+    --text-size: 22px;
+    --hover-color: #014076;
+    --cursor: url("../images/cursors/Normal\ Select.png") 0 0, pointer;
+    --hand-cursor: url("../images/cursors/Link\ Select.png") 0 0, pointer;
+}
+
+body {
+    cursor: var(--cursor);
+}
+
+a,
+button,
+input[type="button"],
+#navbar>ul>li>img:hover {
+    cursor: var(--hand-cursor);
+}
+
+#home-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    z-index: 10;
+}
+
+#home-content-text {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+
+#home-content-text>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+#home-content-text>div>h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    font-size: 55px;
+    margin: 5px 0 15px 0;
+}
+
+#home-content-text>div>p {
+    margin: 0;
+}
+
+#home-content-text>div>button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 190px;
+    height: 62px;
+    background-color: var(--primary-text-color);
+    border: none;
+    margin-top: 33px;
+    transition: 0.5s ease-in-out;
+}
+
+#home-content-text>div>button:hover {
+    background-color: var(--hover-color);
+}
+
+#home-content-text>div>button>a {
+    color: white;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+
+#home-character {
+    width: 600px;
+    height: auto;
+    max-height: 93%;
+    position: relative;
+    z-index: 10;
+}
+
+.clouds-bg {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+      overflow: hidden;
+}
+
+#cloud1-bg,
+#cloud2-bg {
+    width: 1800px;
+}
+
+#cloud1-bg {
+    right: -100px;
+}
+
+#cloud2-bg {
+    right: 200px;
+    bottom: -10px;
+    z-index: 3;
+}
+
+#cloud3-bg {
+    z-index: 20;
+    right: -5px;
+    width: 800px;
+    bottom: -30px;
+}

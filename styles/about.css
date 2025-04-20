@@ -1,0 +1,308 @@
+html, body {
+    overflow-y: auto;
+}
+
+body {
+    position: relative;
+}
+
+#who-am-i-section {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    align-items: center;
+    position: relative;
+    
+}
+
+#who-am-i-section > img:nth-child(1) {
+    justify-self: flex-start;
+}
+
+#about-img {
+    width: 460px;
+    margin-left: 100px;
+}
+
+#about-me-description {
+    width: 75%;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    justify-self: start;
+}
+
+#about-me-description > h1 {
+    font-family: "Abril Fatface", cursive;
+    color: var(--primary-text-color);
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#about-me-description > p {
+    font-size: 22px;
+}
+
+.clouds-bg-about {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 1100px;
+}
+
+#cloud1-about {
+    transform: scaleY(-1);
+    top: 0;
+    right: 0px;
+}
+
+#cloud2-about {
+    transform: scale(-1);
+    top: 0;
+    left: 0;
+}
+
+.about-titles {
+    color: var(--primary-text-color);
+    font-size: 30px;
+    margin-left: 100px;
+    align-self: flex-start;
+}
+
+#languages-section {
+    margin-top: 74px;
+    position: relative;
+}
+
+#languages-section > div {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#languages-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.languages-els {
+    background-color: #ebf8ffc2;
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 23px;
+}
+
+.clouds-charac-about {
+    width: 500px;
+}
+
+#characteristics-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    background: linear-gradient(180deg, #77C0EE 0%, rgba(37.40, 160.71, 255, 0.49) 28%, rgba(172.76, 207.03, 255, 0.59) 50%, rgba(37, 161, 255, 0.68) 72%, #77C0EE 100%);
+}
+
+.cloud-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    gap: 20px;
+}
+
+.cloud-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud-container img {
+    width: 400px;
+}
+
+#main-cloud img {
+    width: 550px;
+}
+
+#main-cloud p {
+    font-size: 27px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.cloud-container p {
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.cloud-container:nth-child(1) { grid-column: 1; grid-row: 1; justify-self: end; }
+.cloud-container:nth-child(2) { grid-column: 3; grid-row: 1; }
+.cloud-container:nth-child(3) { grid-column: 2; grid-row: 2; }
+.cloud-container:nth-child(4) { grid-column: 1; grid-row: 3; justify-self: end; align-self: end; }
+.cloud-container:nth-child(5) { grid-column: 3; grid-row: 3; align-self: end; }
+
+#about-character {
+    position: absolute;
+    width: 200px;
+    transform: translateY(-64%);
+}
+
+.hobby-imgs {
+    width: 400px;
+}
+
+.hobby-els {
+    display: flex;
+    flex-direction: column;
+    border: 3px white solid;
+    border-radius: 114px;
+    align-items: center;
+    height: 650px;
+}
+
+.hobby-els > h4 {
+    font-size: 29px;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.hobby-els > p {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    margin: 0 60px 20px 20px;
+    font-weight: 400;
+}
+
+#hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+}
+
+#hobbies-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#hobbies-section > h3 {
+    margin-top: 100px;
+}
+
+#hobby-2-img {
+    width: 360px;
+    margin-top: 45px;
+}
+
+
+#hobby-3-img {
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#contant-section h3 {
+    margin-top: 60px;
+}
+
+#contant-section {
+    margin-bottom: 60px;
+}
+
+#contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 86%;
+}
+
+#contact-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#contact-physical span {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contact-physical span p, #contact-details span  {
+font-size: 22px;
+color: black;
+text-align: center;
+font-weight: 400;
+}
+
+.contact-icons-physical {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#contact-social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-icons-media {
+    width: 60px;
+    height: 60px;
+}
+
+#references-section  {
+    position: relative;
+}
+
+#references-section h3  {
+    margin-top: 60px;
+}
+
+#references-section p {
+font-size: 22px;
+color: black;
+font-weight: 400;
+margin-left: 100px;
+}
+
+#scroll-up-btn {
+    position: relative;
+    bottom: 40px;
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    background-color: #77C0EE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s;
+    color: #075D97;
+    font-size: 22px;
+    border: #075D97 2px solid;
+    font-weight: 600;
+}
+
+#scroll-up-btn:hover {
+    background-color: #6bb0db;
+}
