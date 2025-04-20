@@ -12,6 +12,11 @@ body {
     background-color: #77C0EE;
     overflow: hidden;
     line-height: 1.5;
+    height: 100%;
+}
+
+* {
+    border: 1px solid red;
 }
 
 :root {
@@ -104,6 +109,7 @@ input[type="button"],
     position: absolute;
     bottom: 0;
     z-index: 5;
+    overflow: hidden;
 }
 
 #cloud1-bg,
@@ -126,4 +132,37 @@ input[type="button"],
     right: -5px;
     width: 800px;
     bottom: -30px;
+}
+
+@media screen and (max-width: 768px) {
+    #home-content-img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: auto;
+    }
+
+    #home-content-text>div {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    #home-content {
+        margin-top: 100px;
+    }
+
+    #home-content-text>div>button {
+        width: 200px;
+        height: 67px;
+    }
+
+    #home-content-text>div>button>a {
+        font-size: 23px;
+    }
+
+    #cloud3-bg {
+        right: -140px;
+        width: 1250px;
+        bottom: 0px;
+    }
 }
