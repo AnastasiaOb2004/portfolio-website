@@ -162,3 +162,32 @@ input[type="button"],
         bottom: 0px;
     }
 }
+
+
+@media screen and (max-width: 500px) { 
+    #cloud-wrapper-mobile {
+        display: flex;
+    }
+
+    .clouds-bg-mobile {
+        width: 700px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        z-index: 50;
+        overflow: hidden;
+    }
+
+    #cloud1-bg-mobile {
+        top: 0;
+        z-index: 5;
+        right: -90px;
+        transform: rotate(-90deg);
+    }
+
+    #cloud2-bg-mobile, #cloud2-bg-mobile {
+        width: 670px;
+        bottom: -30px;
+        right: -60px;
+    }
+}
