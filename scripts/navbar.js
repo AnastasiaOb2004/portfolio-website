@@ -9,6 +9,7 @@ function handleNavbarDisplay() {
 
     if (window.innerWidth <= 768) {
         burgerMenu.style.display = 'flex';
+        navbar.style.display = 'none';
         let isClicked = false;
         burgerMenu.addEventListener('click', () => {
             hiddenMenu.style.transition = `0.5s ease-in-out`;
