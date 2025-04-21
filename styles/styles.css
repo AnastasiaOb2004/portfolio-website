@@ -15,9 +15,9 @@ body {
     height: 100%;
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 :root {
     --primary-text-color: #075D97;
