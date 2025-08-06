@@ -262,6 +262,7 @@ font-weight: 400;
 #contact-social-media {
     display: flex;
     justify-content: space-around;
+    width: 80%;
 }
 
 .contact-icons-media {
