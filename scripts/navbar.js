@@ -8,6 +8,7 @@ function handleNavbarDisplay() {
     navbar.innerHTML = '';
 
     if (window.innerWidth <= 768) {
+      navbar.style.display = 'none';
         burgerMenu.style.display = 'flex';
         let isClicked = false;
         burgerMenu.addEventListener('click', () => {

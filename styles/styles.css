@@ -171,9 +171,20 @@ input[type="button"],
     }
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
+
+    #home-content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
     #cloud-wrapper-mobile {
         display: flex;
+    }
+
+    #cloud-wrapper {
+        display: none;
     }
 
     .clouds-bg-mobile {
@@ -192,9 +203,30 @@ input[type="button"],
         transform: rotate(-90deg);
     }
 
-    #cloud2-bg-mobile, #cloud2-bg-mobile {
+    #cloud2-bg-mobile,
+    #cloud2-bg-mobile {
         width: 670px;
         bottom: -30px;
         right: -60px;
     }
+
+    #home-content-text>div>p {
+        font-size: 16px;
+    }
+
+    #home-content-text>div>h1 {
+        font-size: 30px;
+    }
+
+
+    #home-content-text>div>button {
+        display: none;
+    }
+
+    #home-character {
+        width: 386px;
+        margin-top: 15px;
+        left: -10px;
+    }
+
 }
