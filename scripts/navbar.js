@@ -21,24 +21,25 @@ function handleNavbarDisplay() {
                 isClicked = false;
             }
         });
-       hiddenMenu.innerHTML = `
-  <ul>
+        hiddenMenu.innerHTML = `
+         <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="html/about.html">About</a></li>
     <li><a href="html/skills.html">Skills</a></li>
     <li><a href="html/projects.html">Projects</a></li>
   </ul>
 `;
-
-navbar.innerHTML = `
-  <ul>
+    } else {
+        navbar.style.display = `flex`;
+        navbar.innerHTML = `
+         <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="html/about.html">About</a></li>
     <li><a href="html/skills.html">Skills</a></li>
     <li><a href="html/projects.html">Projects</a></li>
   </ul>
-`; 
-}
+`;
+    }
 }
 
 window.addEventListener('load', handleNavbarDisplay);
