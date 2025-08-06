@@ -24,9 +24,9 @@ function handleNavbarDisplay() {
         hiddenMenu.innerHTML = `
          <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="html/about.html">About</a></li>
-    <li><a href="html/skills.html">Skills</a></li>
-    <li><a href="html/projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
   </ul>
 `;
     } else {
@@ -34,9 +34,9 @@ function handleNavbarDisplay() {
         navbar.innerHTML = `
          <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="html/about.html">About</a></li>
-    <li><a href="html/skills.html">Skills</a></li>
-    <li><a href="html/projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
   </ul>
 `;
     }
