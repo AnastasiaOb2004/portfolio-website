@@ -1,10 +1,47 @@
-body {
+html, body {
+  height: auto;    
+  min-height: 100%;  
+  margin: 0;        
+  padding: 0;
+  position: relative; 
+}
+
+html {
+    overflow-y: auto;
+}
+
+.skill-types-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.soft-skills-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-types-container h2 {
+    font-size: 35px;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#skills-section {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#skills-section {
+.skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px; 
@@ -13,7 +50,7 @@ body {
     width: 78%;
 }
 
-#skills-section > .skills:nth-child(10) {
+.skills-container > .skills:nth-child(10) {
     grid-column: 2 / 3; 
 }
 
@@ -26,8 +63,12 @@ body {
     align-items: center;
     height: 90px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     transition: 1s;
+}
+
+#hard-skills h2 {
+    margin-top: 100px;
 }
 
 .skills:hover {
@@ -46,9 +87,19 @@ background-color: #ebf8ff;
     font-weight: 500;
 }
 
+.skills h5 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #002B97;
+}
+
 #mongoDB-icon {
    width: 30px;
    margin-left: 25px;
+}
+
+#last-skill {
+    margin-bottom: 30px;
 }
 
 .clouds-bg-skills {
@@ -81,4 +132,28 @@ background-color: #ebf8ff;
     top: 0px;
     left: -35px;
     z-index: 3;
+}
+
+#scroll-up-btn {
+    position: relative;
+    bottom: 40px;
+    left: 93%;
+    width: 50px;
+    height: 50px;
+    background-color: #77C0EE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s;
+    color: #075D97;
+    font-size: 22px;
+    border: #075D97 2px solid;
+    font-weight: 600;
+    z-index: 20;
+}
+
+#scroll-up-btn:hover {
+    background-color: #6bb0db;
 }
