@@ -44,7 +44,7 @@
     position: absolute;
     z-index: 999;
     cursor: pointer;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 100%;
     top: 30px;
