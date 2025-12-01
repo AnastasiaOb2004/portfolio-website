@@ -68,7 +68,11 @@ html {
 }
 
 #hard-skills h2 {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+#hard-skills {
+    margin-bottom: 100px;
 }
 
 .skills:hover {
