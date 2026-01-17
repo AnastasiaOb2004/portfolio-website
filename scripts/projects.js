@@ -9,4 +9,11 @@ function scrollUp() {
       behavior: 'smooth'
     });
   }
+
   
+  
+function showAlert(event) {
+  event.preventDefault();
+  alert("This page is currently under development 🙂");
+}
+
