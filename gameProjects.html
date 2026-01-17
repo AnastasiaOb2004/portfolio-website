@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio: Game Projects</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/gameProjects.css">
+    <link rel="icon" href="images/icons/cloud-icon.png">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <div id="burger-menu"><img src="images/icons/burger-menu.png" id="burger-menu-img" alt="Burger menu"></div>
+    <div id="hidden-menu"></div>
+
+    <img src="images/graphical els/small-cloud.png" id="cloud-GameProjects" class="clouds-bg-GameProjects" alt="Cloud">
+    <h1>My Game Designs</h1>
+    <p id="projects-p">Below you can see some of my game design work and 3D modelling projects.</p>
+
+    <div class="game">
+        <div class="circles"></div>
+        <div class="pacman">
+            <img src="images/graphical els/PacMan.gif" alt="Pacman">
+        </div>
+    </div>
+
+
+
+    <section class="projects-containers">
+        <div class="place-image-content slider">
+            <img class="place-images" src="images/projects-img/game-projects/witch-img1.png">
+            <img class="place-images" src="images/projects-img/game-projects/witch-img2.png">
+            <img class="place-images" src="images/projects-img/game-projects/witch-img3.png">
+            <img class="place-images" src="images/projects-img/game-projects/witch-img4.png">
+            <div class="place-button-container">
+                <button class="place-arrows" onclick="previousSlide(this)">
+                    <img src="images/graphical els/arrow.png" class="arrow-imgs" alt="Previous slide">
+                </button>
+
+                <button class="place-arrows" onclick="nextSlide(this)">
+                    <img src="images/graphical els/arrow-right.png" class="arrow-imgs" alt="Next slide">
+                </button>
+            </div>
+
+        </div>
+        <div class="projects-text">
+            <h3>Escape Witch!</h3>
+            <p>This game is an ongoing project, which I am making using Roblox Studio. The idea is here pretty simple:
+                to collect right amount of bags, while running from the monster. At this stage almost everything is
+                ready, except monster design and mechanics.</p>
+        </div>
+    </section>
+
+
+    <section class="projects-containers">
+        <div class="place-image-content slider">
+            <img class="place-images" src="images/projects-img/game-projects/dungeon-img1.png">
+            <img class="place-images" src="images/projects-img/game-projects/dungeon-img2.png">
+            <img class="place-images" src="images/projects-img/game-projects/dungeon-img3.png">
+            <div class="place-button-container">
+                <button class="place-arrows" onclick="previousSlide(this)">
+                    <img src="images/graphical els/arrow.png" class="arrow-imgs" alt="Previous slide">
+                </button>
+
+                <button class="place-arrows" onclick="nextSlide(this)">
+                    <img src="images/graphical els/arrow-right.png" class="arrow-imgs" alt="Next slide">
+                </button>
+            </div>
+        </div>
+        <div class="projects-text">
+            <h3>Dungeon</h3>
+            <p>This is not particularly a game, but rather an exploration of Godot game engine. Here the focus was to
+                learn and explore, and this game helped me to move on for “Escape Witch!” project.</p>
+        </div>
+    </section>
+
+    <div class="game">
+        <div class="circles"></div>
+        <div class="pacman">
+            <img src="images/graphical els/PacMan.gif" alt="Pacman">
+        </div>
+    </div>
+
+    <section id="modelling-section">
+        <div id = "modelling-section-text">
+            <h3>3D-Modelling</h3>
+            <p>All models where developed using Autodesk Maya</p>
+        </div>
+        <div class="place-image-content slider">
+            <div class="place-button-container container-button-models">
+                <button class="place-arrows arrows-models" onclick="previousSlide(this)">
+                    <img src="images/graphical els/arrow.png" class="arrow-imgs" alt="Previous slide">
+                </button>
+
+                <button class="place-arrows arrows-models" onclick="nextSlide(this)">
+                    <img src="images/graphical els/arrow-right.png" class="arrow-imgs" alt="Next slide">
+                </button>
+            </div>
+            <img class="place-images images-models" src="images/projects-img/modelling-projects/model-1.png">
+            <img class="place-images images-models" src="images/projects-img/modelling-projects/model-3.png">
+            <img class="place-images images-models" src="images/projects-img/modelling-projects/model-2.png">
+            <img class="place-images images-models" src="images/projects-img/modelling-projects/model-4.png">
+        </div>
+    </section>
+
+    <div class="game">
+        <div class="circles"></div>
+        <div class="pacman">
+            <img src="images/graphical els/PacMan.gif" alt="Pacman">
+        </div>
+    </div>
+
+    <section id="browser-games-section">
+        <div>
+            <h3>Programmed Games</h3>
+            <p>Some small games that I made using HTML, CSS and Javascript. They can be playtested!</p>
+        </div>
+        <div class="game-links">
+            <a href="https://anastasiaob2004.github.io/snakeGame/" target="_blank" rel="noopener noreferrer">Snake Game</a>
+
+            <a href="https://anastasiaob2004.github.io/tic-toe/" target="_blank" rel="noopener noreferrer">Tic Toe Game</a>
+        </div>
+    </section>
+
+      <section id="programmed-games-section">
+        <div>
+            <h3>Pac-Man</h3>
+            <p>This game is developed in C++. There are two difficulty modes, and in order to win, player should collect all dots </p>
+        </div>
+        <div id="pac-man-images-div">
+            <img class="pac-man-images" src="images/projects-img/game-projects/pacman-img1.png">
+            <img class="pac-man-images" src="images/projects-img/game-projects/pacman-img2.png">
+        </div>
+    </section>
+
+    <div class="game">
+        <div class="circles"></div>
+        <div class="pacman">
+            <img src="images/graphical els/PacMan.gif" alt="Pacman">
+        </div>
+    </div>
+
+    <button id="scroll-up-btn" onclick="scrollUp()">↑</button>
+
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/gameProjects.js"></script>
+    <script src="scripts/navbar.js"></script>
+</body>
+
+</html>
