@@ -40,7 +40,7 @@ input[type="button"],
 
 #home-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-left: 50px;
     position: relative;
     z-index: 10;
 }
@@ -103,6 +103,7 @@ input[type="button"],
     max-height: 93%;
     position: relative;
     z-index: 10;
+    margin-top: 40px;
 }
 
 .clouds-bg {
