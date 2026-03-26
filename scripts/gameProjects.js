@@ -20,7 +20,7 @@ document.querySelectorAll('.game').forEach((game, index) => {
 
   pacman.style.left = pacmanX + 'px';
 
-  const dotSpacing = 60;
+const dotSpacing = window.innerWidth < 500 ? 45 : 60;
 
   for (let i = 0; i < 5; i++) {
     const dot = document.createElement('div');

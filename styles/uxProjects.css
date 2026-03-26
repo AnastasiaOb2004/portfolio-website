@@ -141,3 +141,196 @@ p {
 #scroll-up-btn:hover {
     background-color: #6bb0db;
 }
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .clouds-bg-UXProjects {
+        width: 650px;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+
+    #cloud-UXProject1 {
+        top: -40px;
+        right: -170px;
+    }
+
+    #cloud-UXProject2 {
+        top: -40px;
+        left: -170px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 1.1;
+        margin: 110px 20px 18px;
+        position: relative;
+        z-index: 10;
+    }
+
+    #UXProjects-p {
+        width: auto;
+        max-width: 620px;
+        margin: 0 24px;
+        font-size: 18px;
+        line-height: 1.6;
+        position: relative;
+        z-index: 10;
+    }
+
+    #curvy-line {
+        width: min(70vw, 340px);
+        margin: 30px auto 10px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .projects-containers,
+    .project-containers-right {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 40px);
+        margin: 42px auto;
+        gap: 20px;
+        padding: 22px 20px;
+        box-sizing: border-box;
+        background: rgba(235, 248, 255, 0.38);
+        border-radius: 24px;
+        position: relative;
+        z-index: 10;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    .projects-containers > div {
+        width: 100%;
+        text-align: left;
+        justify-self: unset;
+    }
+
+    .projects-images {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        border-radius: 18px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .video-preview {
+        display: block;
+        width: 100%;
+    }
+
+    .video-preview .projects-images {
+        width: 100%;
+    }
+
+    .projects-containers > div > h3 {
+        font-size: 28px;
+        margin: 0 0 12px;
+    }
+
+    .projects-containers p {
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .projects-btns {
+        width: 160px;
+        height: 48px;
+        margin-top: 18px;
+        border-radius: 14px;
+    }
+
+    .projects-btns > a {
+        font-size: 18px;
+    }
+
+    #scroll-up-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        left: auto;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+        z-index: 1000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clouds-bg-UXProjects {
+        width: 500px;
+        opacity: 0.35;
+    }
+
+    #cloud-UXProject1 {
+        top: -20px;
+        right: -150px;
+    }
+
+    #cloud-UXProject2 {
+        top: -20px;
+        left: -150px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 95px 16px 14px;
+    }
+
+    #UXProjects-p {
+        margin: 0 16px;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    #curvy-line {
+        width: min(78vw, 280px);
+        margin: 24px auto 6px;
+    }
+
+    .projects-containers,
+    .project-containers-right {
+        width: calc(100% - 32px);
+        margin: 30px auto;
+        padding: 18px 16px;
+        gap: 16px;
+        border-radius: 20px;
+    }
+
+    .projects-images {
+        border-radius: 14px;
+    }
+
+    .projects-containers > div > h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .projects-containers p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .projects-btns {
+        width: 145px;
+        height: 44px;
+        margin-top: 16px;
+    }
+
+    .projects-btns > a {
+        font-size: 16px;
+    }
+}

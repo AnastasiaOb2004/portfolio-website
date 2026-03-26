@@ -307,3 +307,293 @@ margin-left: 100px;
 #scroll-up-btn:hover {
     background-color: #6bb0db;
 }
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        position: relative;
+    }
+
+    #cloud1-about {
+        width: 650px;
+        right: -180px;
+        top: -40px;
+        opacity: 0.5;
+    }
+
+    .about-titles {
+        font-size: 26px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    #who-am-i-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 110px 20px 0;
+        gap: 30px;
+    }
+
+    #about-me-description {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        background-color: rgba(235, 248, 255, 0.45);
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 10;
+    }
+
+    #about-me-description > h1 {
+        font-size: 38px;
+        margin: 0 0 10px 0;
+        line-height: 1.1;
+    }
+
+    #about-me-description > p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    #about-img {
+        width: min(88vw, 340px);
+        margin: 0;
+        border-radius: 20px;
+        position: relative;
+        z-index: 10;
+    }
+
+    #languages-section {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    #languages-section > div {
+        margin-top: 25px;
+    }
+
+    #languages-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .languages-els {
+        padding: 10px 22px;
+        border-radius: 18px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #characteristics-section {
+        margin-top: 70px;
+        padding: 30px 20px;
+        background: linear-gradient(
+            180deg,
+            #77C0EE 0%,
+            rgba(37, 161, 255, 0.30) 35%,
+            rgba(172, 207, 255, 0.40) 50%,
+            rgba(37, 161, 255, 0.35) 70%,
+            #77C0EE 100%
+        );
+    }
+
+    .cloud-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .cloud-container,
+    .cloud-container:nth-child(1),
+    .cloud-container:nth-child(2),
+    .cloud-container:nth-child(3),
+    .cloud-container:nth-child(4),
+    .cloud-container:nth-child(5) {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .cloud-container img {
+        width: min(85vw, 280px);
+    }
+
+    #main-cloud img {
+        width: min(90vw, 320px);
+    }
+
+    .cloud-container p {
+        font-size: 17px;
+        width: 70%;
+        line-height: 1.3;
+    }
+
+    #main-cloud p {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    #contant-section {
+        margin: 50px 0;
+        padding: 0 20px;
+    }
+
+    #contant-section h3 {
+        margin-top: 0;
+    }
+
+    #contact-details-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+    }
+
+    #contact-physical {
+        width: 100%;
+    }
+
+    #contact-physical span {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 16px;
+        padding: 10px;
+    }
+
+    #contact-physical span p,
+    #contact-details span {
+        font-size: 18px;
+        text-align: left;
+        word-break: break-word;
+        margin: 0;
+    }
+
+    .contact-icons-physical {
+        width: 38px;
+        height: 38px;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+
+    #contact-span-word {
+        text-align: center !important;
+        font-size: 18px;
+    }
+
+    #contact-social-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .contact-icons-media {
+        width: 48px;
+        height: 48px;
+    }
+
+    #scroll-up-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        left: auto;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+        z-index: 1000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #who-am-i-section {
+        padding: 95px 16px 0;
+        gap: 24px;
+    }
+
+    #about-me-description {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    #about-me-description > h1 {
+        font-size: 32px;
+    }
+
+    #about-me-description > p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    #about-img {
+        width: min(92vw, 300px);
+    }
+
+    .about-titles {
+        font-size: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .languages-els {
+        font-size: 16px;
+        padding: 9px 18px;
+    }
+
+    .cloud-container img {
+        width: min(88vw, 240px);
+    }
+
+    #main-cloud img {
+        width: min(92vw, 280px);
+    }
+
+    .cloud-container p {
+        font-size: 15px;
+    }
+
+    #main-cloud p {
+        font-size: 18px;
+    }
+
+    #contact-physical span p,
+    #contact-details span {
+        font-size: 16px;
+    }
+
+    .contact-icons-physical {
+        width: 34px;
+        height: 34px;
+    }
+
+    .contact-icons-media {
+        width: 42px;
+        height: 42px;
+    }
+
+    #cloud1-about {
+        width: 500px;
+        right: -170px;
+        top: -20px;
+    }
+}

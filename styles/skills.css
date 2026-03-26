@@ -161,3 +161,202 @@ background-color: #ebf8ff;
 #scroll-up-btn:hover {
     background-color: #6bb0db;
 }
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+        min-height: 100%;
+    }
+
+    #skills-section {
+        margin-top: 110px;
+        padding: 0 20px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .skill-types-container {
+        width: 100%;
+    }
+
+    .skill-types-container h2 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    #hard-skills h2 {
+        margin-top: 20px;
+    }
+
+    #hard-skills {
+        margin-bottom: 40px;
+    }
+
+    .skills-container {
+        width: 100%;
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        justify-items: center;
+    }
+
+    .skills-container > .skills:nth-child(10) {
+        grid-column: auto;
+    }
+
+    .skills {
+        width: 100%;
+        max-width: 260px;
+        min-height: 82px;
+        height: auto;
+        border-radius: 18px;
+        padding: 12px 14px;
+        box-sizing: border-box;
+    }
+
+    .soft-skills-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills img {
+        width: 52px;
+        margin-right: 16px;
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
+    #mongoDB-icon {
+        width: 24px;
+        margin-left: 6px;
+        margin-right: 22px;
+    }
+
+    .skills h4 {
+        font-size: 21px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .skills h5 {
+        font-size: 19px;
+        margin: 0;
+        line-height: 1.2;
+        text-align: center;
+        width: 100%;
+    }
+
+    .clouds-bg-skills {
+        width: 520px;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+
+    #cloud1-bg-skills {
+        left: -180px;
+        bottom: -20px;
+    }
+
+    #cloud2-bg-skills {
+        right: -180px;
+        bottom: -20px;
+    }
+
+    #cloud3-bg-skills {
+        top: -30px;
+        right: -190px;
+    }
+
+    #cloud4-bg-skills {
+        top: -30px;
+        left: -190px;
+    }
+
+    #scroll-up-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        left: auto;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+        z-index: 1000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #skills-section {
+        margin-top: 95px;
+        padding: 0 16px 36px;
+        gap: 20px;
+    }
+
+    .skill-types-container h2 {
+        font-size: 26px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 22px;
+    }
+
+    .skills {
+        max-width: 100%;
+        min-height: 74px;
+        border-radius: 16px;
+        padding: 12px 14px;
+    }
+
+    .skills img {
+        width: 46px;
+        margin-right: 14px;
+    }
+
+    #mongoDB-icon {
+        width: 22px;
+        margin-left: 4px;
+        margin-right: 18px;
+    }
+
+    .skills h4 {
+        font-size: 19px;
+    }
+
+    .skills h5 {
+        font-size: 17px;
+    }
+
+    .clouds-bg-skills {
+        width: 380px;
+        opacity: 0.35;
+    }
+
+    #cloud1-bg-skills {
+        left: -140px;
+        bottom: 10px;
+    }
+
+    #cloud2-bg-skills {
+        right: -140px;
+        bottom: 10px;
+    }
+
+    #cloud3-bg-skills {
+        top: -10px;
+        right: -145px;
+    }
+
+    #cloud4-bg-skills {
+        top: -10px;
+        left: -145px;
+    }
+}

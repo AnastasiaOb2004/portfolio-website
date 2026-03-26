@@ -3,6 +3,10 @@
 
 /* http://www.rw-designer.com/cursor-set/blue-gradient-no-shadow */
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     padding: 0;
@@ -10,11 +14,11 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     background-color: #77C0EE;
-    overflow: hidden;
     line-height: 1.5;
-    height: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-
 /* * {
     border: 1px solid red;
 } */
@@ -230,4 +234,123 @@ input[type="button"],
         left: -10px;
     }
 
+}
+@media screen and (max-width: 500px) {
+    html,
+    body {
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    #home-content {
+        display: block;
+        margin: 0;
+        padding: 150px 0 20px 0;
+        min-height: 100vh;
+        position: relative;
+        z-index: 10;
+    }
+
+    #home-content-text {
+        display: block;
+        height: auto;
+        position: relative;
+        z-index: 20;
+        padding: 15px 16px;
+    }
+
+    /* text block to the right */
+    #home-content-text > div:first-child {
+        width: 48%;
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+        text-align: left;
+    }
+
+    #home-content-text > div > h1 {
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 0 0 12px;
+        max-width: 180px;
+    }
+
+    #home-content-text > div > p {
+        font-size: 15px;
+        line-height: 1.45;
+        max-width: 185px;
+        margin: 0;
+    }
+
+    #home-content-text > div > button {
+        display: none;
+    }
+
+    /* character moved to left bottom */
+    #home-content-img {
+        position: fixed;
+        bottom: 0%;
+        left: 12px;
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        pointer-events: none;
+        z-index: 12;
+        transform: none;
+    }
+
+    #home-character {
+        width: 150vw;
+        height: auto;
+        margin: 0;
+        left: -24%;
+        position: relative;
+        z-index: 12;
+    }
+
+    /* clouds */
+    #cloud-wrapper {
+        display: none;
+    }
+
+    #cloud-wrapper-mobile {
+        display: block;
+        position: fixed;
+        inset: auto 0 0 0;
+        width: 100%;
+        height: 220px;
+        pointer-events: none;
+        z-index: 11;
+        overflow: hidden;
+    }
+
+    .clouds-bg-mobile {
+        position: absolute;
+        height: auto;
+        max-width: none;
+    }
+
+    #cloud1-bg-mobile {
+        width: 120%;
+        left: -50%;
+        bottom: 0;
+        z-index: 11;
+        transform: none;
+    }
+
+    #cloud2-bg-mobile {
+        width: 130%;
+        height: 250%;
+        left: -19%;
+        bottom: 0%;
+        z-index: 10;
+    }
+
+  
 }

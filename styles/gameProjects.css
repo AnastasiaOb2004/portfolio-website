@@ -225,3 +225,320 @@ h3 {
 #scroll-up-btn:hover {
     background-color: #6bb0db;
 }
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .clouds-bg-GameProjects {
+        width: 650px;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+
+    #cloud-GameProjects {
+        top: -40px;
+        left: -170px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 1.1;
+        margin: 110px 20px 18px;
+        position: relative;
+        z-index: 10;
+    }
+
+    #projects-p {
+        max-width: 620px;
+        margin: 0 24px;
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .game {
+        height: 70px;
+    }
+
+    .circles {
+        width: 220px;
+        height: 16px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .pacman img {
+        width: 130px;
+    }
+
+    .projects-containers {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 40px);
+        margin: 36px auto;
+        gap: 20px;
+        padding: 22px 20px;
+        box-sizing: border-box;
+        background: rgba(235, 248, 255, 0.38);
+        border-radius: 24px;
+        position: relative;
+        z-index: 10;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    .projects-text {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin: 0 0 12px;
+        text-align: left;
+    }
+
+    .slider {
+        width: 100%;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .place-image-content {
+        width: 100%;
+    }
+
+    .place-images {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .place-button-container {
+        position: static;
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .place-arrows {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(7, 93, 151, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow-imgs {
+        width: 18px;
+    }
+
+    #modelling-section {
+        margin: 40px 20px;
+        padding: 24px 20px 30px;
+        border-radius: 24px;
+        background: linear-gradient(
+            180deg,
+            #77C0EE 0%,
+            #3D9FDD 70%,
+            #77C0EE 100%
+        );
+        position: relative;
+        z-index: 10;
+    }
+
+    #modelling-section-text {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    #modelling-section-text h3,
+    #browser-games-section h3,
+    #programmed-games-section h3 {
+        text-align: center;
+    }
+
+    #modelling-section-text p,
+    #browser-games-section p,
+    #programmed-games-section p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .images-models {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .container-button-models {
+        top: auto;
+        margin-top: 14px;
+    }
+
+    #browser-games-section,
+    #programmed-games-section {
+        margin: 36px 20px;
+        padding: 0 10px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .game-links {
+        width: 100%;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .game-links > a {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    #pac-man-images-div {
+        width: 100%;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .pac-man-images {
+        width: min(90vw, 320px);
+        height: auto;
+        border-radius: 16px;
+    }
+
+    #scroll-up-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        left: auto;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+        z-index: 1000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clouds-bg-GameProjects {
+        width: 500px;
+        opacity: 0.35;
+    }
+
+    #cloud-GameProjects {
+        top: -20px;
+        left: -150px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 95px 16px 14px;
+    }
+
+    #projects-p {
+        margin: 0 16px;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .game {
+        height: 58px;
+    }
+
+    .circles {
+        width: 170px;
+        height: 14px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+
+    .projects-containers {
+        width: calc(100% - 32px);
+        margin: 30px auto;
+        padding: 18px 16px;
+        gap: 16px;
+        border-radius: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .place-images,
+    .images-models {
+        border-radius: 14px;
+    }
+
+    .place-arrows {
+        width: 42px;
+        height: 42px;
+    }
+
+    .arrow-imgs {
+        width: 16px;
+    }
+
+    #modelling-section {
+        margin: 30px 16px;
+        padding: 20px 16px 24px;
+        border-radius: 20px;
+    }
+
+    #browser-games-section,
+    #programmed-games-section {
+        margin: 30px 16px;
+        padding: 0;
+    }
+
+    .game-links > a {
+        font-size: 17px;
+    }
+
+    .pac-man-images {
+        width: min(92vw, 280px);
+    }
+}

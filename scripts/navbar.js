@@ -5,9 +5,9 @@ function handleNavbarDisplay() {
   const hiddenMenu = document.querySelector('#hidden-menu');
   const navbar = document.querySelector('#navbar');
 
-  burgerMenu.style.display = 'none';
-  hiddenMenu.innerHTML = '';
   navbar.innerHTML = '';
+  hiddenMenu.innerHTML = '';
+  hiddenMenu.classList.remove('open');
 
   const projectsSubMenu = `
     <ul class="projects-submenu">
@@ -21,29 +21,35 @@ function handleNavbarDisplay() {
     navbar.style.display = 'none';
     burgerMenu.style.display = 'flex';
 
-    let isClicked = false;
-
-    burgerMenu.onclick = () => {
-      hiddenMenu.style.transition = '0.5s ease-in-out';
-      hiddenMenu.style.right = isClicked ? '-300px' : '10px';
-      isClicked = !isClicked;
-    };
-
     hiddenMenu.innerHTML = `
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li class="projects-toggle">
-          <span class="projects-label">Projects <span class="arrow">▾</span></span>
-          ${projectsSubMenu}
-        </li>
-      </ul>
+      <div class="mobile-menu-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li class="projects-toggle">
+            <button type="button" class="projects-label">
+              <span>Projects</span>
+              <span class="arrow">▾</span>
+            </button>
+            ${projectsSubMenu}
+          </li>
+        </ul>
+      </div>
     `;
 
+    burgerMenu.onclick = (e) => {
+      e.stopPropagation();
+      hiddenMenu.classList.toggle('open');
+      burgerMenu.classList.toggle('active');
+    };
+
     setupProjectsToggle();
+    setupMobileClose();
   } else {
     navbar.style.display = 'flex';
+    burgerMenu.style.display = 'none';
+    hiddenMenu.classList.remove('open');
 
     navbar.innerHTML = `
       <ul>
@@ -63,21 +69,36 @@ function handleNavbarDisplay() {
 
 function setupProjectsToggle() {
   document.querySelectorAll('.projects-toggle').forEach(item => {
+    const trigger = item.querySelector('.projects-label');
     const submenu = item.querySelector('.projects-submenu');
 
-    item.addEventListener('click', (e) => {
+    trigger.addEventListener('click', (e) => {
       e.stopPropagation();
-      submenu.classList.toggle('show');
       item.classList.toggle('open');
+      submenu.classList.toggle('show');
     });
   });
+}
 
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.projects-submenu').forEach(menu => {
-      menu.classList.remove('show');
-    });
-    document.querySelectorAll('.projects-toggle').forEach(item => {
-      item.classList.remove('open');
+function setupMobileClose() {
+  const hiddenMenu = document.querySelector('#hidden-menu');
+  const burgerMenu = document.querySelector('#burger-menu');
+
+  document.addEventListener('click', (e) => {
+    if (
+      hiddenMenu.classList.contains('open') &&
+      !hiddenMenu.contains(e.target) &&
+      !burgerMenu.contains(e.target)
+    ) {
+      hiddenMenu.classList.remove('open');
+      burgerMenu.classList.remove('active');
+    }
+  });
+
+  hiddenMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hiddenMenu.classList.remove('open');
+      burgerMenu.classList.remove('active');
     });
   });
 }
@@ -90,11 +111,6 @@ function setupDesktopHover() {
     clearTimeout(hoverTimeout);
     submenu.classList.add('show');
     item.classList.add('open');
-
-    hoverTimeout = setTimeout(() => {
-      submenu.classList.remove('show');
-      item.classList.remove('open');
-    }, 1000);
   });
 
   item.addEventListener('mouseleave', () => {
@@ -102,7 +118,7 @@ function setupDesktopHover() {
     hoverTimeout = setTimeout(() => {
       submenu.classList.remove('show');
       item.classList.remove('open');
-    }, 1000);
+    }, 300);
   });
 }
 
