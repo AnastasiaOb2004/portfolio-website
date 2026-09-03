@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio: Front-end Projects</title>
+    <title>My Portfolio: Dev Projects</title>
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/frontEndProjects.css">
@@ -18,10 +18,26 @@
 
 
     <img src="images/graphical els/small-cloud.png" id="cloud-projects" class="clouds-bg-projects" alt="Cloud">
-    <h1>My Front-end Projects</h1>
-    <p id="projects-p">Here are some of my projects that I have done. I am looking forward to creating more projects in
-        the future!</p>
+    <h1>My Dev Projects</h1>
+    <p id="projects-p">Here are some of my projects that I have done :)</p>
 
+    <section class="projects-containers">
+        <section id="video-container" class="projects-images">
+            <iframe width="500" height="450" src="https://www.youtube.com/embed/cdjrYclky-U"
+                title="YouTube video player" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+        <div>
+            <h3>NF online shop</h3>
+            <p>NF Online Shop is a full-stack e-commerce platform built with HTML, CSS, JavaScript, and Node.js on the
+                backend. I used Firebase for user authentication and data storage and Amazon Web Services (AWS) for
+                managing product images. The live is not available due to Chrome security restrictions, but you can
+                check the repository on GitHub. </p>
+            <button class="projects-btns"><a href="https://github.com/AnastasiaOb2004/internet-shop.git">View
+                    on GitHub</a></button>
+        </div>
+    </section>
+    
     <section class="projects-containers">
         <img class="projects-images" src="images/graphical els/project-EnglishForUkrainians.png">
         <div>
@@ -37,25 +53,33 @@
         </div>
     </section>
 
+  <section class="projects-containers">
+        <div class="place-image-content slider">
+            <img class="interpol-images place-images" src="images/projects-img/dev-projects/interpolMain.png">
+            <img class="interpol-images place-images" src="images/projects-img/dev-projects/interpolManage.png">
+            <img class="interpol-images place-images" src="images/projects-img/dev-projects/interpolStats.png">
+            <img class="interpol-images place-images" src="images/projects-img/dev-projects/interpolSQL.png">
+            <div class="place-button-container">
+                <button class="place-arrows" onclick="previousSlide(this)">
+                    <img src="images/graphical els/arrow.png" class="arrow-imgs" alt="Previous slide">
+                </button>
 
-    <section class="projects-containers">
-        <section id="video-container" class="projects-images">
-            <iframe width="500" height="450" src="https://www.youtube.com/embed/cdjrYclky-U"
-                title="YouTube video player" frameborder="0" allowfullscreen>
-            </iframe>
-        </section>
-        <div>
-            <h3>NF online shop</h3>
-            <p>NF Online Shop is a full-stack e-commerce platform built with HTML, CSS, JavaScript, and Node.js on the
-                backend. I used Firebase for user authentication and data storage and Amazon Web Services (AWS) for
-                managing product images. The live is not available due to Chrome security restrictions, but you can
-                check the repository on GitHub. </p>
-                <button class="projects-btns"><a href="https://github.com/AnastasiaOb2004/internet-shop.git">View
-                        code</a></button>
+                <button class="place-arrows" onclick="nextSlide(this)">
+                    <img src="images/graphical els/arrow-right.png" class="arrow-imgs" alt="Next slide">
+                </button>
+            </div>
+
+        </div>
+        <div class="projects-text">
+            <h3>Interpol/Crime Control App</h3>
+            <p>This project is a system for tracking criminals, their organisations, and
+                the crimes they committed. Users can browse criminal cases and see details like opening and closing
+                dates, and admins can add new criminals and crimes, edit records, open or close cases, and set prison terms.
+                This system was built in C#, Windows Forms and SQL Server was used as a database.</p>
+            <button class="projects-btns"><a href="https://github.com/AnastasiaOb2004/CrimeControl">View
+                    on GitHub</a></button>
         </div>
     </section>
-
-
 
     <section class="projects-containers" id="projects-container1">
         <img class="projects-images" src="images/graphical els/project-flowerShop.png">
@@ -103,6 +127,7 @@
     <button id="scroll-up-btn" onclick="scrollUp()">↑</button>
 
     <script src="scripts/projects.js"></script>
+    <script src="scripts/gameProjects.js"></script>
     <script src="scripts/navbar.js"></script>
 </body>
 

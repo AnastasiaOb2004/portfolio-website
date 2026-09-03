@@ -11,8 +11,8 @@ function handleNavbarDisplay() {
 
   const projectsSubMenu = `
     <ul class="projects-submenu">
-      <li><a href="uxProjects.html">UX-Projects</a></li>
-      <li><a href="frontEndProjects.html">Front-end</a></li>
+      <li><a href="uxProjects.html">UX Projects</a></li>
+      <li><a href="frontEndProjects.html">Dev Projects</a></li>
       <li><a href="gameProjects.html">Game Design</a></li>
     </ul>
   `;
