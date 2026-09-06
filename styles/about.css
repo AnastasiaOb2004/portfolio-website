@@ -6,7 +6,7 @@ body {
     position: relative;
 }
 
-#who-am-i-section {
+.who-am-i-sections {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     align-items: center;
@@ -14,7 +14,7 @@ body {
     
 }
 
-#who-am-i-section > img:nth-child(1) {
+.who-am-i-sections > img:nth-child(1) {
     justify-self: flex-start;
 }
 
@@ -23,22 +23,22 @@ body {
     margin-left: 100px;
 }
 
-#about-me-description {
+ .about-me-descriptions {
     width: 75%;
     margin-bottom: 70px;
     margin-left: 100px;
     justify-self: start;
 }
 
-#about-me-description > h1 {
+ .about-me-descriptions > h1 {
     font-family: "Abril Fatface", cursive;
     color: var(--primary-text-color);
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
-#about-me-description > p {
+ .about-me-descriptions  > p {
     font-size: 22px;
 }
 
@@ -69,8 +69,9 @@ body {
 }
 
 #languages-section {
-    margin-top: 74px;
+    margin-top: 10px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 #languages-section > div {
@@ -308,6 +309,61 @@ margin-left: 100px;
     background-color: #6bb0db;
 }
 
+/* ===== DESKTOP-ONLY: two-column about layout ===== */
+@media screen and (min-width: 769px) {
+
+    #about-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        row-gap: 30px;
+    }
+
+    /* the sections stop being boxes so their children join the grid */
+    .who-am-i-sections {
+        display: contents;
+    }
+
+    /* row 1: intro text + photo */
+    #about-layout .who-am-i-sections:first-of-type > .about-me-descriptions:first-child {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    #about-img {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    /* row 2: the two text columns */
+    #about-layout .who-am-i-sections:first-of-type > .about-me-descriptions:last-child {
+        grid-column: 1;
+        grid-row: 2;
+        width: 85%;
+    }
+
+    #about-layout .who-am-i-sections:last-of-type > .about-me-descriptions {
+        grid-column: 2;
+        grid-row: 2;
+        width: 85%;
+        margin-left: 40px;
+    }
+
+      #about-layout .about-me-descriptions {
+        margin-bottom: 0;
+    }
+
+    /* row 3: languages, full width, below both columns */
+    #languages-section {
+        grid-column: 1 / -1;
+        grid-row: 3;
+   
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     html,
     body {
@@ -332,7 +388,7 @@ margin-left: 100px;
         margin-right: 24px;
     }
 
-    #who-am-i-section {
+   .who-am-i-sections{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -340,7 +396,7 @@ margin-left: 100px;
         gap: 30px;
     }
 
-    #about-me-description {
+    .about-me-descriptions {
         width: 100%;
         margin: 0;
         text-align: left;
@@ -352,13 +408,13 @@ margin-left: 100px;
         z-index: 10;
     }
 
-    #about-me-description > h1 {
+    .about-me-descriptions > h1 {
         font-size: 38px;
         margin: 0 0 10px 0;
         line-height: 1.1;
     }
 
-    #about-me-description > p {
+    .about-me-descriptions > p {
         font-size: 18px;
         line-height: 1.6;
         margin: 0;
@@ -523,24 +579,25 @@ margin-left: 100px;
         font-size: 20px;
         z-index: 1000;
     }
+    
 }
 
 @media screen and (max-width: 500px) {
-    #who-am-i-section {
-        padding: 95px 16px 0;
+    .who-am-i-sections {
+        padding: 55px 16px 0;
         gap: 24px;
     }
 
-    #about-me-description {
+     .about-me-descriptions {
         padding: 18px;
         border-radius: 16px;
     }
 
-    #about-me-description > h1 {
+     .about-me-descriptions > h1 {
         font-size: 32px;
     }
 
-    #about-me-description > p {
+    .about-me-descriptions > p {
         font-size: 16px;
         line-height: 1.55;
     }

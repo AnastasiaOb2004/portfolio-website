@@ -144,12 +144,10 @@ input[type="button"],
 }
 
 @media screen and (max-width: 768px) {
-    #home-content-img {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-top: auto;
-    }
+   
+    #home-content-text > #home-content-img {
+    display: none;
+}
 
     #home-content-text>div {
         width: 100%;
@@ -184,10 +182,6 @@ input[type="button"],
         margin-right: 40px;
     }
 
-    #cloud-wrapper-mobile {
-        display: flex;
-    }
-
     #cloud-wrapper {
         display: none;
     }
@@ -196,16 +190,8 @@ input[type="button"],
         width: 700px;
         height: auto;
         position: absolute;
-        bottom: 0;
         z-index: 50;
         overflow: hidden;
-    }
-
-    #cloud1-bg-mobile {
-        top: 0;
-        z-index: 5;
-        right: -90px;
-        transform: rotate(-90deg);
     }
 
     #cloud2-bg-mobile,
@@ -256,54 +242,43 @@ input[type="button"],
         z-index: 10;
     }
 
-    #home-content-text {
-        display: block;
-        height: auto;
-        position: relative;
-        z-index: 20;
-        padding: 15px 16px;
-    }
+ #home-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 15px 16px;
+}
 
-    /* text block to the right */
-    #home-content-text > div:first-child {
-        width: 48%;
-        margin-left: auto;
-        margin-right: 0;
-        display: block;
-        text-align: left;
-    }
+#home-content-text > div:first-child {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
 
-    #home-content-text > div > h1 {
-        font-size: 30px;
-        line-height: 1.15;
-        margin: 0 0 12px;
-        max-width: 180px;
-    }
+#home-content-text > div > h1 {
+    font-size: 33px;
+    line-height: 1.15;
+    margin: 0 auto 12px;
+    max-width: 400px;
+}
 
-    #home-content-text > div > p {
-        font-size: 15px;
-        line-height: 1.45;
-        max-width: 185px;
-        margin: 0;
-    }
+#home-content-text > div > p {
+    font-size: 17px;
+    line-height: 1.45;
+    max-width: 240px;
+    margin: 0 auto;
+}
 
     #home-content-text > div > button {
         display: none;
     }
 
-    /* character moved to left bottom */
-    #home-content-img {
-        position: fixed;
-        bottom: 0%;
-        left: 12px;
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
-        pointer-events: none;
-        z-index: 12;
-        transform: none;
-    }
+ #home-content-text > #home-content-img {
+    display: none;
+}
 
     #home-character {
         width: 150vw;
@@ -322,9 +297,9 @@ input[type="button"],
     #cloud-wrapper-mobile {
         display: block;
         position: fixed;
-        inset: auto 0 0 0;
+        top: 0;
         width: 100%;
-        height: 220px;
+        height: 100%;
         pointer-events: none;
         z-index: 11;
         overflow: hidden;
@@ -338,16 +313,13 @@ input[type="button"],
 
     #cloud1-bg-mobile {
         width: 120%;
-        left: -50%;
-        bottom: 0;
-        z-index: 11;
-        transform: none;
+        transform: rotate(-180deg);
+        top: 0;
     }
 
     #cloud2-bg-mobile {
         width: 130%;
-        height: 250%;
-        left: -19%;
+        left: -30%;
         bottom: 0%;
         z-index: 10;
     }
